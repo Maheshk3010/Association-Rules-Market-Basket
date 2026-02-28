@@ -1,27 +1,71 @@
-# Association Rules – Market Basket Analysis
+# Association Rules Assignment
 
-This repository contains the implementation of Association Rule Mining
-using the Apriori algorithm on a transaction-based dataset.
+## Introduction
 
-Each row in the dataset represents a transaction containing
-comma-separated items purchased together.
+This project is based on Association Rule Mining using the Apriori algorithm.  
+The dataset used is Online Retail dataset.  
+The main aim is to find which products are frequently purchased together.
 
-## Objective
-To discover frequent itemsets and generate association rules
-using support, confidence, and lift measures.
+---
 
-## Work Performed
-- Loaded transaction dataset
-- Converted transactions into basket format using one-hot encoding
-- Applied Apriori algorithm to find frequent itemsets
-- Generated association rules
-- Filtered strong rules using lift metric
+## Dataset
 
-## Tools and Technologies
+Dataset Name: Online Retail.xlsx  
+
+Columns in dataset:
+- InvoiceNo
+- StockCode
+- Description
+- Quantity
+- InvoiceDate
+- UnitPrice
+- CustomerID
+- Country
+
+The dataset contains transaction data of an online retail store.
+
+---
+
+## Steps Performed
+
+1. Loaded the dataset in Google Colab.
+2. Removed missing values.
+3. Removed cancelled invoices.
+4. Removed negative quantity values.
+5. Removed duplicate records.
+6. Filtered data for United Kingdom.
+7. Converted data into basket format.
+8. Applied Apriori algorithm.
+9. Generated association rules using lift.
+
+---
+
+## Concepts Used
+
+- Support  
+- Confidence  
+- Lift  
+- Apriori Algorithm  
+- Market Basket Analysis  
+
+---
+
+## Result
+
+After applying the Apriori algorithm, frequent itemsets were generated.  
+Association rules were created using lift metric.  
+The rules show which products are commonly bought together.
+
+This analysis can help in cross-selling and product recommendation.
+
+---
+
+## Tools Used
+
 - Python
 - Pandas
-- mlxtend
-- Google Colab / Jupyter Notebook
+- MLxtend
+- Google Colab
 
 ## Files Included
 - Jupyter Notebook (.ipynb) with complete implementation
